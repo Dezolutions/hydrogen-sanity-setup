@@ -90,10 +90,15 @@ export type SanityHeroPage = {
   data?: ProductWithNodes[] | ProductWithNodes;
 };
 
+export type SanityAbout = {
+  title: string;
+  description: string;
+}
 export type SanityHomePage = {
   hero?: SanityHeroHome;
   modules: (SanityModuleImage | SanityModuleInstagram)[];
   seo: SanitySeo;
+  about: SanityAbout;
 };
 
 export type SanityImageWithProductHotspots = {

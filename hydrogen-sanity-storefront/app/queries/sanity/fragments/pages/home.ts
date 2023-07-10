@@ -11,5 +11,9 @@ export const HOME_PAGE = groq`
   modules[] {
     ${MODULES}
   },
-  ${SEO}
+  ${SEO},
+  about {
+    title,
+    description
+  }
 `;

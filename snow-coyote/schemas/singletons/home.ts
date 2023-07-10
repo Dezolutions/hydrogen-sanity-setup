@@ -49,6 +49,24 @@ export default defineField({
       type: 'seo.home',
       group: 'seo',
     }),
+    //About 
+    defineField({ 
+      name: 'about', 
+      title: 'About Section', 
+      type: 'object', 
+      fields: [ 
+        { 
+          name: 'title', 
+          title: 'Title', 
+          type: 'string', 
+        }, 
+        { 
+          name: 'description', 
+          title: 'Description', 
+          type: 'text', 
+        }, 
+      ], 
+    }),
   ],
   preview: {
     prepare() {
